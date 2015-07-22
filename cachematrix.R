@@ -26,7 +26,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function checks if the inverse matrix has already been calculated (and stored) by means of calling the 1st function.
-## If so, it returns it. Otherwise it calculates it.
+## If so, it returns it (and prints a message). Otherwise it calculates it.
+## the functions stored in the previous function now are called as elements of a list called x(the input variable for this function)
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
